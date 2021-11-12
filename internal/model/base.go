@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"strings"
 
-	"gorm.io/gen/field"
-	"gorm.io/gen/internal/utils"
+	"github.com/polpo-studio/gen/field"
+	"github.com/polpo-studio/gen/internal/utils"
 )
 
 type Status int

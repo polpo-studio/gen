@@ -12,11 +12,11 @@ import (
 	"strings"
 	"text/template"
 
+	"github.com/polpo-studio/gen/internal/check"
+	"github.com/polpo-studio/gen/internal/model"
+	"github.com/polpo-studio/gen/internal/parser"
+	tmpl "github.com/polpo-studio/gen/internal/template"
 	"golang.org/x/tools/imports"
-	"gorm.io/gen/internal/check"
-	"gorm.io/gen/internal/model"
-	"gorm.io/gen/internal/parser"
-	tmpl "gorm.io/gen/internal/template"
 	"gorm.io/gorm"
 	"gorm.io/gorm/utils/tests"
 )

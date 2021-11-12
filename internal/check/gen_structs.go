@@ -10,8 +10,8 @@ import (
 	"gorm.io/gorm/schema"
 	"gorm.io/gorm/utils/tests"
 
-	"gorm.io/gen/internal/model"
-	"gorm.io/gen/internal/parser"
+	"github.com/polpo-studio/gen/internal/model"
+	"github.com/polpo-studio/gen/internal/parser"
 )
 
 /*

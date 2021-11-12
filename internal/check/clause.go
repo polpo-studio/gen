@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"gorm.io/gen/internal/model"
-	"gorm.io/gen/internal/parser"
+	"github.com/polpo-studio/gen/internal/model"
+	"github.com/polpo-studio/gen/internal/parser"
 )
 
 // Clause a symbol of clause, it can be sql condition clause, if clause, where clause, set clause and else cluase
