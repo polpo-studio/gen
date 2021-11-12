@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gorm.io/gen/internal/model"
-	"gorm.io/gen/internal/parser"
+	"github.com/polpo-studio/gen/internal/model"
+	"github.com/polpo-studio/gen/internal/parser"
 )
 
 type slice struct {

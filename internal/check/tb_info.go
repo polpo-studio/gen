@@ -6,7 +6,7 @@ import (
 
 	"gorm.io/gorm"
 
-	"gorm.io/gen/internal/model"
+	"github.com/polpo-studio/gen/internal/model"
 )
 
 const (

@@ -10,7 +10,7 @@ import (
 	"gorm.io/gorm/clause"
 	"gorm.io/hints"
 
-	"gorm.io/gen/field"
+	"github.com/polpo-studio/gen/field"
 )
 
 type stmtOpt func(*gorm.Statement) *gorm.Statement

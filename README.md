@@ -2,7 +2,7 @@
 
 [![GoVersion](https://img.shields.io/github/go-mod/go-version/go-gorm/gen)](https://github.com/go-gorm/gen/blob/master/go.mod)
 [![Release](https://img.shields.io/github/v/release/go-gorm/gen)](https://github.com/go-gorm/gen/releases)
-[![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-blue?logo=go&logoColor=white)](https://pkg.go.dev/gorm.io/gen?tab=doc)
+[![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-blue?logo=go&logoColor=white)](https://pkg.go.dev/github.com/polpo-studio/gen?tab=doc)
 [![Go Report Card](https://goreportcard.com/badge/github.com/go-gorm/gen)](https://goreportcard.com/report/github.com/go-gorm/gen)
 [![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![OpenIssue](https://img.shields.io/github/issues/go-gorm/gen)](https://github.com/go-gorm/gen/issues?q=is%3Aopen+is%3Aissue)
@@ -125,13 +125,13 @@ To install Gen package, you need to install Go and set your Go workspace first.
 1.The first need Go installed(version 1.14+ is required), then you can use the below Go command to install Gen.
 
 ```bash
-go get -u gorm.io/gen
+go get -u github.com/polpo-studio/gen
 ```
 
 2.Import it in your code:
 
 ```go
-import "gorm.io/gen"
+import "github.com/polpo-studio/gen"
 ```
 
 ## Quick start
@@ -146,7 +146,7 @@ $ cat generate.go
 ```go
 package main
 
-import "gorm.io/gen"
+import "github.com/polpo-studio/gen"
 
 // generate code
 func main() {
@@ -271,7 +271,7 @@ Actually, you're not supposed to create a new field variable, cause it will be a
 Create field examples:
 
 ```go
-import "gorm.io/gen/field"
+import "github.com/polpo-studio/gen/field"
 
 // create a new generic field map to `generic_a`
 a := field.NewField("table_name", "generic_a")
@@ -296,7 +296,7 @@ Here is a basic struct `user` and struct `DB`.
 // generated code
 package query
 
-import "gorm.io/gen"
+import "github.com/polpo-studio/gen"
 
 // struct map to table `users` 
 type user struct {

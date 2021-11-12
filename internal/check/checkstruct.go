@@ -8,9 +8,9 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"
 
-	"gorm.io/gen/field"
-	"gorm.io/gen/internal/model"
-	"gorm.io/gen/internal/parser"
+	"github.com/polpo-studio/gen/field"
+	"github.com/polpo-studio/gen/internal/model"
+	"github.com/polpo-studio/gen/internal/parser"
 )
 
 // BaseStruct struct info in generated code
