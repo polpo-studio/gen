@@ -4,7 +4,10 @@ package template
 const Model = NotEditMark + `
 package {{.StructInfo.Package}}
 
-import "time"
+import (
+	"encoding/json"
+	"time"
+)
 
 const TableName{{.StructName}} = "{{.TableName}}"
 
@@ -24,5 +27,15 @@ type {{.StructName}} struct {
 // TableName {{.StructName}}'s table name
 func (*{{.StructName}}) TableName() string {
     return TableName{{.StructName}}
+}
+
+// MarshalBinary
+func (s *{{.StructName}}) MarshalBinary() ([]byte, error) {
+	return json.Marshal(s)
+}
+
+//UnmarshalBinary
+func (s *{{.StructName}}) UnmarshalBinary(data []byte) error {
+	return json.Unmarshal(data, s)
 }
 `
