@@ -3,6 +3,7 @@ package model
 import (
 	"bytes"
 	"fmt"
+	"github.com/polpo-studio/gen/internal/utils"
 	"strings"
 )
 
@@ -55,8 +56,13 @@ func (c *Column) ToMember(nullable bool) *Member {
 		ColumnComment:    c.ColumnComment,
 		MultilineComment: c.multilineComment(),
 		GORMTag:          c.buildGormTag(),
-		JSONTag:          c.ColumnName,
+		JSONTag:          c.buildJsonTag(),
 	}
+}
+
+func (c *Column) buildJsonTag() string {
+	// converts a string to lowerCamelCase
+	return utils.ConvertCamelInitCase(c.ColumnName, false)
 }
 
 func (c *Column) multilineComment() bool { return strings.Contains(c.ColumnComment, "\n") }
